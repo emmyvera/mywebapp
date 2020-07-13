@@ -15,11 +15,17 @@ const PostSchema = new Schema({
         trim: true
     },
 
+    category:{
+        type:String,
+        default: "Others",
+        trim:true
+    },
+
     pic: {
         type: String,
         default:"profilePics.jpg"
     },
-    
+
     author: {
         type: String,
         default: "Admin"

@@ -8,7 +8,11 @@ const CategorySchema = new Schema({
         required: true,
         trim: true
     },
-
+    pic: {
+        type: String,
+        default: "categoryPics.jpg",
+        trim:true
+    },
     author: {
         type: String,
         default: "Admin"
